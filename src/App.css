@@ -38,58 +38,67 @@ header{
     border: 1px solid #fff;
   }
 
-  /*Elementos*/
-.Degrader{
-    background: linear-gradient(0.25turn, #a24bd4, #7327a1, #380158);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 18vw;
-    height: 35vh;    
-}
-.Degrader div{
-    background-color: #0C0824;
-    width: 15vw;
-    height: 30vh;
-}
-.QuadradoWhite{
-    width: 2vw;
-    height: 4vh;
-    background-color: #fff;
-}
-.ElementesInvert{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-.ElementesInvert span{
-    width: 50px;
-    height: 3px;
-    background-color: #fff;
-    rotate: 30deg;
-    display: block;
-}
-.ElementoZebrao{
-    overflow: hidden;   
-    width: 10vw;
-    height: 20vh; 
-}
-.ElementoZebrao div{
-    width: 15vw;
-    height: 25vh;
-    background-color: #0C0824;;    
+  /*Elementos fundo*/
+  .degrader-one{
+    position: absolute;
     z-index: -99;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    rotate: 45deg;
+    top: -70px;
+    left: 15%;
+  }
+  .degrader-rigth{
+    position: absolute;
+    right: -100px;
+    z-index: -99;
+    top: -80px;
+  }
+  .degrader-botton{
+    position: absolute;
+    bottom: -100px;
+    right: 25%;
+  }
+
+.ElementesLeft{
+  position: absolute;
+  z-index: -99;
+  top: 50%;
+  left: 3%;
 }
-.ElementoZebrao div span{
-    width: 150%;
-    height: 10px;
-    background-color: #fff;
-    display: block;
+.ElementesRigth{
+  position: absolute;
+  top: 60%;
+  right: 3%;
+  rotate: 90deg;
+  z-index: -99;
+}
+.ZebraoLeft{
+  position: absolute;
+  bottom: 0;
+  z-index: -99;
+}
+.ZebraoRigth{
+  position: absolute;
+  right: 0;
+  top: 40%;
+  z-index: -99;
+}
+.quadrado-primeiro{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: #fff;
+  z-index: -98;
+  left: 23%;
+  top: 10%;
+}
+
+.Section{
+  position: absolute;
+  bottom: 0;
+}
+.BarraAmarela{
+  position: absolute;
+  width: 35%;
+  height: 30px;
+  bottom: 0;
+  left: 15%;
 }
