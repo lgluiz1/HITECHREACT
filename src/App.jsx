@@ -6,12 +6,13 @@ import ElementesInvert from './components/backgroudsElements/ElementesInvert/Ele
 import QuadradoWhite from  './components/backgroudsElements/QuadradoWhite'
 import ElementoZebrao from  './components/backgroudsElements/ElementoZebrao'
 import BarraAmarela from './components/backgroudsElements/BarraAmarela'
+import HamburgerMenu from './components/MenuMobiler/HamburgerMenu'
 import './App.css'
 
 function App() {
   return (
     <>
-    <header className='topo'><Logo/> <Menu/></header>
+    <header className='topo'><Logo/> <Menu classe="desktop"/> <HamburgerMenu classe="ham7" /></header>
     <Section classe="section"/>
     <DegraderQaudradro classe="degrader-one"/>
     <DegraderQaudradro classe="degrader-rigth"/>    

@@ -26,3 +26,12 @@ body{
   position: absolute;
   top: 45%;
 }
+@media (max-width: 768px) {
+  .menuDesktop {
+    display: none;
+  }
+  .ham7{
+    display: block;
+    padding-right: 100px;
+  }
+}
