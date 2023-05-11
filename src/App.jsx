@@ -7,7 +7,6 @@ import QuadradoWhite from  './components/backgroudsElements/QuadradoWhite'
 import ElementoZebrao from  './components/backgroudsElements/ElementoZebrao'
 import BarraAmarela from './components/backgroudsElements/BarraAmarela'
 import HamburgerMenu from './components/MenuMobiler/HamburgerMenu'
-import Button from './components/button'
 import './App.css'
 
 function App() {
