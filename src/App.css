@@ -48,7 +48,7 @@ header{
   }
   .degrader-rigth{
     position: absolute;
-    right: -100px;
+    right: 0px;
     z-index: -99;
     top: -80px;
   }
@@ -61,7 +61,7 @@ header{
 .ElementesLeft{
   position: absolute;
   z-index: -99;
-  top: 50%;
+  top: 60%;
   left: 3%;
 }
 .ElementesRigth{
@@ -105,4 +105,41 @@ header{
 }
 .ham7{
   display: none;
+}
+@media (max-width: 768px){
+.degrader-one{
+  position: absolute;
+  z-index: -99;
+  top: -70px;
+  left: 15%;
+}
+.degrader-rigth{
+  position: absolute;
+  right: 0;
+  z-index: -99;
+  top: -70px;
+}
+.degrader-botton{
+  position: absolute;
+  bottom: 0px;
+  right: 25%;
+}
+.ElementesRigth{
+  position: absolute;
+  top: 20%;
+  right: 15%;
+  rotate: 90deg;
+  z-index: -99;
+}
+.ZebraoRigth{
+  display: none;
+}
+.ZebraoLeft{
+  display: none;
+}
+.degrader-botton{
+    bottom: 0px;
+    right: 10%;
+}
+
 }

@@ -5,8 +5,8 @@ export default function ElementesInvert(props){
         gap: '15px',
       };
     const spanEstilo = {
-        width: '50px',
-        height: '3px',
+        width: '3vh',
+        height: '0.3vh',
         backgroundColor:' #fff',
         rotate: '30deg',
         display: 'block',

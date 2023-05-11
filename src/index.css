@@ -27,6 +27,10 @@ body{
   top: 45%;
 }
 @media (max-width: 768px) {
+  body{
+    overflow: hidden;
+    flex-wrap: wrap;
+  }
   .menuDesktop {
     display: none;
   }

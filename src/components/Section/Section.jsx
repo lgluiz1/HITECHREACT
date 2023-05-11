@@ -1,5 +1,6 @@
 import foto from '../img/oculos.jpg'
 import QuadradoWhite from  '../backgroudsElements/QuadradoWhite'
+import Button from '../button'
 
 export default function Section(props) {
     const principalLinha = {
@@ -12,10 +13,12 @@ export default function Section(props) {
     }
     const hEstilo = {
         fontFamily: 'Rajdhani, sans-serif',
-        fontSize : '5.5em',
+        fontSize : '5.5Vw',
         textTransform: 'uppercase',
         paddingLeft: '15%',
         color: '#fff',
+        display : 'flex',
+        gap: '5px',
     }
     const gamerEstilo = {
         color: '#0C0824',
@@ -24,14 +27,12 @@ export default function Section(props) {
         src: foto,
     }
     const imgEstilo = {
-        width: '500px',
-        height: '500px',
-        overflow: 'hidden',
+        width: '100%',
         position: 'relative',
-        display : 'flex',
-        alignItems: 'center', 
-        justifyContent:'center'
-    }
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+      }
     const quadradoTopo = {
         width: '30px',
         height: '30px',
@@ -39,14 +40,31 @@ export default function Section(props) {
         position: 'absolute',
         zIndex: 99,
     }
+    const lorem = {
+        position: 'absolute',
+        maxWidth: '40Vw',
+        minWidth: '30Vw',
+        top: '120%',
+        left: '15%',
+        display:'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        color : '#fff',
+        gap: '30px',
+        }
     return(
         <>
         <div style={principalLinha}className={props.classe}>
             {props.children}
-            <h1 style={hEstilo}> Tech <span style={gamerEstilo}>Gamer</span></h1>
+            <h1 className='hEstilo' style={hEstilo}  > Tech <span className='gamerEstilo' style={gamerEstilo}>Gamer</span></h1>
             <div style={imgEstilo}>
-                <img {...fotoEstilo} draggable="false" alt="Foto" style={{ width: '800px',}}/>
+                <img {...fotoEstilo} draggable="false" alt="Foto" style={{ width: '50%', height:'50%', objectFit: 'cover' , minWidth: '200px',
+  minHeight: '200px', }}/>
                 
+            </div>
+            <div className="loren" style={lorem}>
+                <p className="paragrafo" style={{fontSize:'2Vw',fontFamily: 'Rajdhani, sans-serif',}}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt a labore ut animi sapiente eum dolore, libero, facilis atque beatae fuga numquam. Illum dolores magni distinctio soluta doloremque qui molestiae!</p>
+                <Button />
             </div>
             <QuadradoWhite style={quadradoTopo} />
         </div>
