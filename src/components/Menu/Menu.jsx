@@ -1,10 +1,10 @@
-export default function Menu(){
-    return(
-        <ul className="menuDesktop">
-                <li><a href="#">home</a></li>
-                <li><a href="#">about us</a></li>
-                <li><a href="#">services</a></li>
-                <li><a href="#">contact us</a></li>
-            </ul>
-    )
+import style from "./style.module.css";
+
+export default function Menu() {
+  const list = ["Home", "About Us", "Services", "Contact Us"];
+  return (
+    <ul className={style.menuDesktop}>
+      {list.map((item, index) => (<li key={index}><a href="#">{item}</a></li>))}
+    </ul>
+  );
 }

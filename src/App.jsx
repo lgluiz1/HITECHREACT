@@ -20,8 +20,8 @@ function App() {
     <QuadradoWhite classe="quadrado-primeiro"/>    
     <ElementesInvert classe="ElementesLeft"/>
     <ElementesInvert classe="ElementesRigth"/>
-    <ElementoZebrao classe="ZebraoLeft"/>
-    <ElementoZebrao classe="ZebraoRigth"/> 
+    <ElementoZebrao class="ZebraoLeft"/>
+    <ElementoZebrao class="ZebraoRigth"/> 
     <BarraAmarela classe="BarraAmarela"/>
     
     

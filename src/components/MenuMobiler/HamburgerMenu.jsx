@@ -1,89 +1,26 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import style from "./style.module.css";
 
-function HamburgerMenu(props) {
+export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const list = ['Home','About us','Services','Contact Us'];
 
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
-
+  
   return (
-    <div className="hamburger-menu" onClick={handleClick} className={props.classe}>
-    {props.children}
-      <div className={`hamburger ${isOpen ? "open" : ""}`}>
-        <span></span>
-        <span></span>
-        <span></span>
+    <div onClick={handleClick} className={style.hamburgerMenu}>
+      <div className={`${style.hamburger}`}>
+        { [1,2,3].map((x) => (<span key={x} className={!isOpen && style.hamburgerClear}></span>)) }
       </div>
       {isOpen && (
-        <ul className="menu">
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
+        <ul className={style.menu}>
+          {list.map((item, index) => <li key={index}>{item}</li>)}
         </ul>
       )}
-      <style>
-        {`
-          .hamburger-menu {
-            position: relative;
-            display: inline-block;
-            cursor: pointer;
-          }
-          
-          .hamburger {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 18px;
-            width: 25px;
-            cursor: pointer;
-          }
-          
-          .hamburger span {
-            height: 3px;
-            background-color: #333;
-          }
-          
-          .open span:first-child {
-            transform: rotate(45deg) translate(4px, 4px);
-          }
-          
-          .open span:nth-child(2) {
-            opacity: 0;
-          }
-          
-          .open span:last-child {
-            transform: rotate(-45deg) translate(4px, -4px);
-          }
-          
-          .menu {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            padding: 10px;
-            background-color: #f0f0f0;
-            list-style: none;
-            margin: 0;
-            display: none;
-          }
-          
-          .menu li {
-            margin: 5px 0;
-            cursor: pointer;
-          }
-          
-          .menu li:hover {
-            color: #fff;
-            background-color: #333;
-          }
-          
-          .hamburger-menu:hover .menu {
-            display: block;
-          }
-        `}
-      </style>
     </div>
   );
 }
 
-export default HamburgerMenu;

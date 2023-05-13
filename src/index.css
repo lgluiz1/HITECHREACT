@@ -31,11 +31,5 @@ body{
     overflow: hidden;
     flex-wrap: wrap;
   }
-  .menuDesktop {
-    display: none;
-  }
-  .ham7{
-    display: block;
-    padding-right: 100px;
-  }
+  
 }
