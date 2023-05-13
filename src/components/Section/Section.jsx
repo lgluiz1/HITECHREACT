@@ -52,6 +52,16 @@ export default function Section(props) {
         color : '#fff',
         gap: '30px',
         }
+        const siteCom = {
+            fontFamily: 'Rajdhani, sans-serif',
+            position: 'absolute',
+            color: '#D8B83F',
+            top: '500%',
+            fontSize : 'calc(13px + 1Vw)',
+            left: '62%',
+            zIndex: '2',
+            
+        }
     return(
         <>
         <div style={principalLinha}className={props.classe}>
@@ -67,6 +77,7 @@ export default function Section(props) {
                 <Button />
             </div>
             <QuadradoWhite style={quadradoTopo} />
+             <p style={siteCom}>...WWW.TECH.COM</p>
         </div>
         </>
     )

@@ -7,7 +7,7 @@ export default function DegraderQaudradro(props) {
       width: '30vw',
       height: '30vh',
       minWidth: '100px',
-      maxWidth: '300px'
+      maxWidth: '300px',
     }
     const estiloDiv = {
       backgroundColor: '#0C0824',
