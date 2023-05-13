@@ -1,0 +1,43 @@
+.btn {
+    color: #D8B83F;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #D8B83F;
+    padding: 10px 20px;
+    font-size: 1Vw;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+    cursor: pointer;
+    max-width: 200px;
+  }
+  
+  .btn:hover {
+    color: white;
+  }
+  
+  .btn::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color:#D8B83F;
+    z-index: -1;
+    transition: all 1s;
+  }
+  
+  .btn:hover::before {
+    width: 160%;
+  }
+
+  @media (max-width: 768px) {
+    .btn {
+        font-size: 4Vw;
+    }
+
+  }

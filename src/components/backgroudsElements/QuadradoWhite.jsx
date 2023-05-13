@@ -1,7 +1,7 @@
-export default function QuadradoWhite(){
+export default function QuadradoWhite(props){
     return(         
-        <div className="QuadradoWhite">
-            
+        <div  className={props.classe}>
+            {props.children}
         </div>
     )
 }
